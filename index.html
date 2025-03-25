@@ -77,21 +77,22 @@
     </div>
 
     <div class="modal fade" id="doaModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered"> <!-- Menambahkan modal-dialog-centered -->
+            <div class="modal-content text-center"> <!-- Menambahkan text-center agar teks juga di tengah -->
                 <div class="modal-header">
                     <h5 class="modal-title" id="doaTitle"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p><strong>Ayat:</strong> <span id="doaAyat"></span></p>
-                    <p><strong>Latin:</strong> <span id="doaLatin"></span></p>
-                    <p><strong>Artinya:</strong> <span id="doaArtinya"></span></p>
+                    <p><strong>Ayat:</strong> <br><span id="doaAyat"></span></p>
+                    <p><strong>Latin:</strong> <br><span id="doaLatin"></span></p>
+                    <p><strong>Artinya:</strong> <br><span id="doaArtinya"></span></p>
                     <audio id="doaAudio" controls class="mt-3" style="display: none;"></audio>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <script>
         let doaData = [];
